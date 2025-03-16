@@ -1,4 +1,4 @@
-const Sponsorship = require("../models/Sponsership");
+const Sponsorship = require("../models/Adds");
 
 const postSponsorship = async (req, res) => {
   try {

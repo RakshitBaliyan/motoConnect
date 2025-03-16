@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Sponsorship = require("../models/sponsership"); // Import the model
+const Sponsorship = require("../models/Adds"); // Import the model
 
 // ✅ GET API to fetch all sponsorships (Separate API)
 router.get("/get-sponsorships", async (req, res) => {
