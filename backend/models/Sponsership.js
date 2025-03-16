@@ -9,4 +9,5 @@ const sponsorshipSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model("sponsorship", sponsorshipSchema);
+const Sponsorship = mongoose.models.Sponsorship || mongoose.model('Sponsorship', sponsorshipSchema);
+module.exports = Sponsorship;
