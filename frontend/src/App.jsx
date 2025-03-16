@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import Sponsorships from "./pages/sponsorships";
+import Sponsorships from "./pages/Sponsorships";
 import AddSponsorship from "./pages/AddSponsorship";
 import SponsorshipDetails from "./pages/SponsorshipDetails";
 
