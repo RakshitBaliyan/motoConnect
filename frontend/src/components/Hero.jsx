@@ -10,7 +10,7 @@ const Hero = () => {
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <a 
-            href="/sponsorships" 
+            href="https://motoconnect.onrender.com/api/get-sponsorships" 
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl text-lg transition duration-300 shadow-lg"
           >
             Browse Sponsorships
