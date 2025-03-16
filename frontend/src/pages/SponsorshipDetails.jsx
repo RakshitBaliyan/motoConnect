@@ -6,7 +6,7 @@ const SponsorshipDetails = () => {
   const [sponsorship, setSponsorship] = useState(null);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch(`http://localhost:8080/api/get-sponsorships/${id}`)
+    fetch(`https://motoconnect.onrender.com/api/get-sponsorships/${id}`)
       .then((res) => res.json())
       .then((data) => setSponsorship(data))
       .catch((err) => console.error("Error fetching sponsorship details:", err));

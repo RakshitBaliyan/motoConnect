@@ -16,7 +16,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const endpoint = "http://localhost:8080/auth/login";
+      const endpoint = "https://motoconnect.onrender.com/auth/login";
 
       const response = await fetch(endpoint,{
         method: "POST",
