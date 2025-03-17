@@ -8,7 +8,7 @@ const AuthRouter = require('./routes/AuthRouter');
 const sponsorshipRoutes = require("./routes/sponsorshipRoutes");
 const getSponsorshipsRoutes = require("./routes/getSponsorships"); 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 7000;
 
 app.get('/ping',(req, res)=>{
   res.send('PONG');

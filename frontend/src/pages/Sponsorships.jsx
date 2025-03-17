@@ -9,7 +9,7 @@ const Sponsorships = () => {
   useEffect(() => {
     const fetchSponsorships = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/get-sponsorships`); // ✅ Using the new API
+        const response = await fetch(`https://motoconnect.onrender.com/api/get-sponsorships`); // ✅ Using the new API
         const data = await response.json();
         setSponsorships(data); // Store in state
         setLoading(false);
