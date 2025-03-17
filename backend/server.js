@@ -15,7 +15,14 @@ app.get('/ping',(req, res)=>{
 })
 
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+  //  origin: "https://social-media-web-app-silk.vercel.app",  
+   origin: "https://moto-connect.vercel.app",  
+   credentials: true,
+   methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+};
+app.use(cors(corsOptions));
+
 app.use('/auth', AuthRouter);
 app.use("/api/sponsorships", sponsorshipRoutes);
 app.use("/api", getSponsorshipsRoutes);
