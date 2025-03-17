@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -9,12 +10,12 @@ const Hero = () => {
           Find the perfect sponsorship opportunities to fuel your content and grow your audience.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <a 
-            href="/sponsorships" 
+          <Link
+            to={"/sponsorships"}
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl text-lg transition duration-300 shadow-lg"
           >
             Browse Sponsorships
-          </a>
+          </Link>
           <a 
             href="/add-sponsorship" 
             className="bg-white text-blue-600 border border-gray-600 hover:bg-blue-100 font-semibold py-3 px-6 rounded-xl text-lg transition duration-300 shadow-lg"
