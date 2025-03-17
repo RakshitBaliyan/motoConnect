@@ -16,12 +16,12 @@ const Hero = () => {
           >
             Browse Sponsorships
           </Link>
-          <a 
-            href="/add-sponsorship" 
+          <Link 
+            to={"/add-sponsorship"}
             className="bg-white text-blue-600 border border-gray-600 hover:bg-blue-100 font-semibold py-3 px-6 rounded-xl text-lg transition duration-300 shadow-lg"
           >
             Post a Sponsorship
-          </a>
+          </Link>
         </div>
       </div>
     </section>
